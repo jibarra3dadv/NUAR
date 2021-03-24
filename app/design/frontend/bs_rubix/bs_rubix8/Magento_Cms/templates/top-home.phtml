@@ -1,0 +1,65 @@
+<div class="top-content-home">
+	<div class="section-element featured_product">
+		<div class="container">
+			{{block class="Rokanthemes\Featuredpro\Block\Featured" template="Rokanthemes_Featuredpro::featured.phtml"}}
+		</div>
+	</div>
+
+	<div class="section-element categories-thumbnail">
+		<div class="container">
+			{{block class="Magento\Cms\Block\Block" block_id="home2_category_thumnail"}}
+		</div>
+	</div>
+
+	<div class="section-element group-product">
+		<div class="container">
+			<div class="contain-group-product">
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						{{block class="Rokanthemes\BestsellerProduct\Block\Bestseller" template="Rokanthemes_BestsellerProduct::bestseller.phtml"}}
+					</div>
+					<div class="col-md-4 col-xs-12">
+						{{block class="Rokanthemes\Onsaleproduct\Block\Onsaleproduct" template="Rokanthemes_Onsaleproduct::onsaleproduct.phtml"}}
+					</div>
+					<div class="col-md-4 col-xs-12">
+						{{block class="Rokanthemes\MostviewedProduct\Block\Mostviewed" template="Rokanthemes_MostviewedProduct::mostviewed.phtml"}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section_testimonial">
+		<div class="container">
+			{{block class="Rokanthemes\Testimonial\Block\Testimonial" template="Rokanthemes_Testimonial::testimonial.phtml"}}
+		</div>
+	</div>
+	
+	<div class="section-element section-newsletter">
+		<div class="container">
+			{{block class="Magento\Newsletter\Block\Subscribe" template="Magento_Newsletter::subscribe.phtml"}}
+		</div>
+	</div>
+
+	<div class="section-element section-services">
+		<div class="container">
+			{{block class="Magento\Cms\Block\Block" block_id="shipping_support"}}
+		</div>
+	</div>
+
+	<div class="section-element box-blog">
+		<div class="container">
+			{{block class="Rokanthemes\Blog\Block\Sidebar\Recent" template="Rokanthemes_Blog::sidebar/slider.phtml"}}
+		</div>
+	</div>
+	<div class="section-brands">
+		<div class="container">
+			{{block class="Magento\Cms\Block\Block" block_id="brand-logo"}}
+		</div>
+	</div>
+	<div class="section-element Instagram_static">
+		<div class="container">
+			{{block class="Magento\Cms\Block\Block" block_id="Instagram_static"}}
+		</div>
+	</div>
+</div>

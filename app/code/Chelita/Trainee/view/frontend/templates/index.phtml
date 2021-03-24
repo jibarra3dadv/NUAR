@@ -1,0 +1,25 @@
+<?php
+
+
+
+$id ='174';
+$sku ='001C';
+$_product = $block->getProductById($id);
+$_product = $block->getProductBySku($sku);
+echo '<br />';
+echo "Este es el id de un prodcuto: &nbsp  &nbsp", $_product->getEntityId();
+echo '<br />';
+echo "Este es es el nombre del id:    &nbsp ", $id,":  &nbsp  ", $_product->getName();
+echo '<br />';
+echo "Este es un SKu:  &nbsp" , $this->execute();
+
+
+
+?>
+
+<h1>Chelita Software</h1>
+
+<p><?= $block->getData('custom_parameter'); ?></p>
+
+
+

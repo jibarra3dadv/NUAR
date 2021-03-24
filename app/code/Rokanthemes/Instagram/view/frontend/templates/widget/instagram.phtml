@@ -1,0 +1,29 @@
+<?php
+/**
+ * Rokanthemes Infotech
+ * Rokanthemes Instagram Extension
+ * 
+ * @category   Rokanthemes
+ * @package    Rokanthemes_Instagram
+ * @copyright  Copyright © 2006-2016 Rokanthemes (https://www.rokanthemesinfotech.com)
+ * @license    https://www.rokanthemesinfotech.com/magento-extension-license/
+ */
+$helper = $this->helper('\Rokanthemes\Instagram\Helper\Data');
+$enable = $helper->getConfig('instagramsection/instagramgroup/active');
+$title = $helper->getConfig('instagramsection/instagramgroup/title');
+$userId = $helper->getConfig('instagramsection/instagramgroup/userid');
+$accessToken = $helper->getConfig('instagramsection/instagramgroup/accesstoken');
+$imageResolution = $helper->getConfig('instagramsection/instagramgroup/selectimageresolution');
+$imageNumber = $this->getData('numberimage');
+?>
+
+<?php
+if ($enable) {
+    ?>
+<div class="title">
+    <?php echo $title; ?>
+</div>
+<div id="instagram" class="content">
+<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/90da28eae3745ff88730c0c265819fa9.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+</div>
+<?php } ?>
